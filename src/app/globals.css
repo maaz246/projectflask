@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: var(--font-instrument-sans), "Instrument Sans", sans-serif;
+    --font-heading: var(--font-familjen-grotesk), "Familjen Grotesk", sans-serif;
+}
+
+/* ==========================================================================
+   Custom Font Declarations
+   ========================================================================== */
+@font-face {
+    font-family: 'Instrument Sans';
+    src: url('/fonts/_Instrument%20Sans__Instrument%20Sans_--italic.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Instrument Sans';
+    src: url('/fonts/_Instrument%20Sans__Instrument%20Sans_--italic.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Familjen Grotesk';
+    src: url('/fonts/_Familjen%20Grotesk__Familjen%20Grotesk_--italic.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Familjen Grotesk';
+    src: url('/fonts/_Familjen%20Grotesk__Familjen%20Grotesk_--italic.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --bd-yellow: #FFC514;
+    --bd-black: #080808;
+    --bd-white: #FFFFFF;
+    --bd-pale: #FAF8F2;
+}
+
+/* ==========================================================================
+   Typography Rules
+   - Instrument Sans: text, navlinks, dropdown links, button text
+   - Familjen Grotesk: heading h1, h2, h3
+   ========================================================================== */
+body {
+    background: var(--bd-white);
+    color: var(--bd-black);
+    font-family: var(--font-instrument-sans), 'Instrument Sans', sans-serif;
+}
+
+p,
+span,
+a,
+li,
+input,
+textarea,
+select {
+    font-family: var(--font-instrument-sans), 'Instrument Sans', sans-serif;
+}
+
+/* Headings: Familjen Grotesk */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading {
+    font-family: var(--font-familjen-grotesk), 'Familjen Grotesk', sans-serif;
+}
+
+/* Nav links, dropdown links, button text: Instrument Sans */
+.header-link,
+nav a,
+nav button,
+.dropdown-item,
+button,
+.btn-yellow-cta,
+.btn-primary {
+    font-family: var(--font-instrument-sans), 'Instrument Sans', sans-serif;
+}
+
+.btn-primary {
+    background: var(--bd-yellow);
+    color: var(--bd-black);
+}
+
+.section-dark {
+    background: var(--bd-black);
+    color: var(--bd-white);
+}
+
+/* ==========================================================================
+   Header & Navigation Custom Styles
+   ========================================================================== */
+.header-wrapper {
+    background-color: var(--bd-pale);
+    border-bottom: 1px solid var(--bd-black);
+}
+
+.header-link {
+    color: var(--bd-black);
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+.header-link:hover {
+    opacity: 0.75;
+}
+
+/* Yellow Action Button (from flasktechs.css / --bd-yellow) */
+.btn-yellow-cta {
+    background-color: var(--bd-yellow);
+    color: var(--bd-black);
+    border: 1px solid #080808;
+    box-shadow: 2.5px 2.5px 0px #080808;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.55rem 1.25rem;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-yellow-cta:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 1.5px 1.5px 0px #080808;
+}
+
+.btn-yellow-cta:active {
+    transform: translate(2.5px, 2.5px);
+    box-shadow: 0px 0px 0px #080808;
+}
+
+/* ==========================================================================
+   Hero & Dotted Background Styles
+   ========================================================================== */
+.bg-dotted-pattern {
+    background-color: var(--bd-pale);
+    background-image: radial-gradient(#E4DECD 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+}
+
+/* ==========================================================================
+   Hero & Dotted Background Styles
+   ========================================================================== */
+.bg-dotted-pattern {
+    background-color: var(--bd-pale);
+    background-image: radial-gradient(#E4DECD 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+}

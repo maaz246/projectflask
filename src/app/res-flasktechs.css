@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Flasktech Responsive Styles (res-flasktechs.css)
+   Add your responsive media queries and device-specific overrides here.
+   ========================================================================== */
+
+/* Extra small devices / Mobile portrait (up to 480px) */
+@media (max-width: 480px) {
+  /* Mobile portrait styles */
+}
+
+/* Small devices / Mobile landscape (up to 640px) */
+@media (max-width: 640px) {
+  /* Mobile styles */
+}
+
+/* Medium devices / Tablets (up to 768px) */
+@media (max-width: 768px) {
+  /* Tablet styles */
+  .header-nav-desktop {
+    display: none;
+  }
+  .header-mobile-toggle {
+    display: flex;
+  }
+}
+
+/* Large devices / Laptops (up to 1024px) */
+@media (max-width: 1024px) {
+  /* Laptop styles */
+}
+
+/* Extra large devices / Desktops (up to 1280px) */
+@media (max-width: 1280px) {
+  /* Desktop styles */
+}
